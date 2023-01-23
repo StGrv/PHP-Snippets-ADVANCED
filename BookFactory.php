@@ -14,11 +14,11 @@ final class BookFactory
     public static function getBook(int $type): ?BookInterface
     {
         switch ($type) {
-            case BookTypeInterface::MAGAZINE:
+            case BookInterface::MAGAZINE:
                 return new Magazine();
-            case BookTypeInterface::ENCYCLOPEDIA:
+            case BookInterface::ENCYCLOPEDIA:
                 return new Encyclopedia();
-            case BookTypeInterface::ANTIQUE:
+            case BookInterface::ANTIQUE:
                 return new Antique();
             default:
                 return null;
