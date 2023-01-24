@@ -21,7 +21,7 @@ final class BookFactory
             case BookInterface::ANTIQUE:
                 return new Antique();
             default:
-                return null; 
+                return null;  
         }
     }
 }
