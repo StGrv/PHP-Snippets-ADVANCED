@@ -27,5 +27,5 @@ interface BookInterface
      * @param int $id
      * @return int|null
      */
-    public function deleteBook(int $id): ?int;
+    public function deleteBook(int $id): ?int; 
 }
