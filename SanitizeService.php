@@ -5,12 +5,12 @@ namespace services;
 class SanitizeService
 {
     /**
-     * Mainly used for sanitizing the input when inserting a record to the DB
-     * @param string|null $var
+     * Used for sanitizing the input when inserting a record to the DB
+     * @param string $var
      * @param $type
      * @return string
      */
-    public static function sanitize(?string $var, $type = ENT_QUOTES): string
+    public static function sanitize(string $var, $type = ENT_QUOTES): string
     {
         if (empty($var)) {
             return "";
@@ -28,12 +28,12 @@ class SanitizeService
     }
 
     /**
-     * Mainly used for decoding the encoded record from the DB when saved with HTML
-     * @param string|null $var
+     * Used for decoding the record from the DB
+     * @param string $var
      * @param $type
      * @return string
      */
-    public static function sanitize_decode(?string $var, $type = ENT_QUOTES): string
+    public static function sanitize_decode(string $var, $type = ENT_QUOTES): string
     {
         if (empty($var)) {
             return "";
